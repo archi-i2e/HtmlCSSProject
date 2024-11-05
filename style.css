@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #120b95;
+}
+
+nav a.active {
+    color: #120b95;
+    font-weight: bold;
+    border-bottom: 2px solid #120b95;
+}
+
+.ideas-btn {
+    background-color: #f4f4f8;
+    color: #120b95;
+    border: 1px solid #120b95;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    float: left;
+    
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-left: 15px;
+    float: right;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs .ta {
+    margin-left: 50px;
+}
+
+.tabs a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.tabs a.active {
+    color: #120b95;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tab {
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scenario {
+    margin-bottom: 10px;
+}
+
+.scenario button {
+    background-color: #f7f7f7;
+    color: #120b95;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden-content {
+    display: none;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    /* Header Layout */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tabs .ta {
+        margin-left: 0;
+    }
+
+    .tabs a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    
+   
+    .content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .scenario button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .scenario button {
+        width: 100%;
+    }
+
+    .hidden-content {
+        font-size: 12px;
+    }
+
+    /* Ideas button and profile adjustments */
+    .ideas-btn,
+    .profile-pic {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    
+}
+
+/* For mobile devices (max-width 480px) */
+/* @media screen and (min-width: 480px){ */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .tabs a {
+        font-size: 12px;
+    }
+
+    .scenario button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-pic img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+
+    /* Buttons on mobile */
+    .ideas-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+}
