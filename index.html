@@ -9,32 +9,42 @@
 
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <div class="logo">Logo</div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Signed Deals</a>
-                <a href="#" class="active">Deal Information</a>
-                <a href="#">Dashboards</a>
-                <a href="#">Contacts</a>
-                <a href="#">All News</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Admin</a>
-            </nav>
-            
-        </div>
-        <div class="header-right">
-            <button class="ideas-btn">Submit Your Ideas!</button>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">Logo</div>
+        
+        <!-- Nav Links -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Signed Deals</a></li>
+            <li><a href="#" class="active">Deal Information</a></li>
+            <li><a href="#">Dashboards</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">All News</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><button class="ideas-btn">Submit Your Ideas!</button></li>
             <div class="profile-pic">
                 <img src="lady.webp" alt="image of lady">
             </div>
-        </div>
+            
+        </ul>
         
-    </header>
+        
+
+        <!-- Image of Lady (for Mobile) -->
+        <div class="image-container">
+            <img src="lady.webp" alt="Lady Image" class="lady-img">
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    
     
     <main>
         <h1>Deal Information</h1>
+
         <div class="tabs">
             <a href="#" class="ta">WRDM Funding Sources   |</a> 
             <a href="#">Deal Process   |</a>
